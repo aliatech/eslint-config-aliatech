@@ -11,13 +11,13 @@
 Install the package through NPM
 
 ```bash
-npm i -D eslint eslint-plugin-jsdoc @aliatech/eslint-config-aliatech
+npm i -D eslint @aliatech/eslint-config-aliatech
 ```
 
 Install the package through Yarn
 
 ```bash
-yarn add --prod eslint eslint-plugin-jsdoc @aliatech/eslint-config-aliatech
+yarn add --prod eslint @aliatech/eslint-config-aliatech
 ```
 
 ## Usage
@@ -42,6 +42,27 @@ Determine which environment you wish to target. This package includes the follow
 | `aliatech`           | General JavaScript (ES6, ES2016, and ES2017)  |
 | `aliatech/env-node`  | Node.js support (extends `aliatech`)          |
 | `aliatech/env-mocha` | Mocha support (extends `aliatech`)            |
+
+### Extensions
+
+This package also includes rules for the [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc).
+If you want to lint jsdoc comments:
+
+* Install the plugin [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc)
+* Add `aliatech/extend` to your `extends` key.
+
+```bash
+npm i -D eslint-plugin-jsdoc
+```
+
+```js
+{
+  "extends": ["aliatech/env-node", "aliatech/extend-jsdoc"],
+  "rules": {
+    // Additional, per-project rules...
+  }
+}
+```
 
 It's recommended that your project have a `.eslintignore` file in the root of your project. Add all
 directories and file patterns you wish to ignore. At the the very least, you should ignore the

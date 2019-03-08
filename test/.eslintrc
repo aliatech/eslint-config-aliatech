@@ -1,3 +1,6 @@
 {
-  "extends": "../env-mocha.js"
+  "extends": [
+    "../env-mocha.js",
+    "../extend-jsdoc.js"
+  ]
 }
