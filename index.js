@@ -10,24 +10,6 @@ module.exports = {
   env: {
     es6: true,
   },
-  plugins: [
-    'jsdoc',
-  ],
-  settings: {
-    jsdoc: {
-      baseConfig: {rules: {strict: 'off'}},
-      // Configure a preferred alias name for a JSDoc tag
-      tagNamePreference: {
-        augments: 'extends', // Prefer @extends over @augments
-      },
-      // Use any of the following settings to override require-param
-      // and allow @param to be omitted when the specified tags are present on the JSDoc comment
-      // or the parent class comment. The default value for each is false
-      allowOverrideWithoutParam: true, // Enables behavior with @override tag
-      allowImplementsWithoutParam: true, // Enables behavior with @implements tag
-      allowAugmentsExtendsWithoutParam: true, // Enables behavior with @augments tag or its synonym @extends
-    },
-  },
   rules: {
     // Enforce a maximum line length.
     // https://eslint.org/docs/rules/max-len

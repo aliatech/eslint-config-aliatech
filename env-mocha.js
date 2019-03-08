@@ -6,6 +6,8 @@ module.exports = {
     mocha: true,
   },
   rules: {
+    'no-magic-numbers': 'off',
+    'new-cap': 'off',
     jsdoc: 'off',
   },
 };

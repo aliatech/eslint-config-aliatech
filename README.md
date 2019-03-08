@@ -28,7 +28,7 @@ of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring).
 
 ```js
 {
-  "extends": "aliatech/env-node",
+  "extends": "@aliatech/aliatech/env-node",
   "rules": {
     // Additional, per-project rules...
   }
@@ -48,8 +48,8 @@ Determine which environment you wish to target. This package includes the follow
 This package also includes rules for the [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc).
 If you want to lint jsdoc comments:
 
-* Install the plugin [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc)
-* Add `aliatech/extend` to your `extends` key.
+1. Install the plugin [`eslint-plugin-jsdoc`](https://github.com/gajus/eslint-plugin-jsdoc)
+2. Add `@aliatech/aliatech/add-jsdoc` to your `extends` key.
 
 ```bash
 npm i -D eslint-plugin-jsdoc
@@ -57,7 +57,10 @@ npm i -D eslint-plugin-jsdoc
 
 ```js
 {
-  "extends": ["aliatech/env-node", "aliatech/extend-jsdoc"],
+  "extends": [
+    "@aliatech/aliatech/env-node",
+    "@aliatech/aliatech/add-jsdoc"
+  ],
   "rules": {
     // Additional, per-project rules...
   }
