@@ -36,7 +36,9 @@
     "should": "^13.2.3"
   },
   "peerDependencies": {
-    "eslint": ">=5.15.1",
+    "eslint": ">=5.15.1"
+  },
+  "optionalPeerDependencies": {
     "eslint-plugin-jsdoc": "^4.1.1"
   }
 }
