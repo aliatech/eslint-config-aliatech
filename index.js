@@ -217,7 +217,7 @@ module.exports = {
 
     // Require Dot Notation.
     // https://eslint.org/docs/rules/dot-notation
-    'dot-notation': ['error', {allowKeywords: false}],
+    'dot-notation': ['error'],
     // Suggest using template literals instead of string concatenation.
     // https://eslint.org/docs/rules/prefer-template
     'prefer-template': 'error',

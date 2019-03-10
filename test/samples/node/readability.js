@@ -7,14 +7,14 @@ no-constant-condition, one-var, no-unreachable, no-var, no-empty, no-unused-expr
 
 // 👎 Is better written in dot notation.
 var x = foo['bar'];
-var x = foo.class; // Property name is a reserved word, square-bracket notation required
+var x = foo['catch']; // Property name is a reserved word, but it's allowed
 
 // 👍 Good
 var x = foo.bar;
 var x = foo['foo-bar'];
 var x = foo[bar]; // Property name is a variable, square-bracket notation required
 var foo = {'class': 'CS 101'};
-var x = foo['class']; // Property name is a reserved word, square-bracket notation required
+var x = foo.catch; // Property name is a reserved word, square-bracket notation required
 
 //=======================================================================
 // prefer-template
