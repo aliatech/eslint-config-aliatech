@@ -1,6 +1,6 @@
 {
   "name": "@aliatech/eslint-config-aliatech",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ESLint shareable config for Node code style of ALIA Technologies",
   "publishConfig": {
     "access": "public"
@@ -36,7 +36,9 @@
     "should": "^13.2.3"
   },
   "peerDependencies": {
-    "eslint": ">=5.15.1",
+    "eslint": ">=5.15.1"
+  },
+  "optionalPeerDependencies": {
     "eslint-plugin-jsdoc": "^4.1.1"
   }
 }
